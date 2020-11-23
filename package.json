@@ -1,0 +1,19 @@
+{
+  "name": "cov-diff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./*.js build/**",
+    "compile": "tsc index.ts",
+    "diff": "node index.js /home/sebastian/Documents/UniStuttgart/SS20/MasterThesis/evaluation/q-diff/coverage-11/coverage-final.json /home/sebastian/Documents/UniStuttgart/SS20/MasterThesis/evaluation/q-diff/coverage-12/coverage-final.json ./build",
+    "cov-diff": "npm run clean && npm run compile && npm run diff"
+  },
+  "author": "Sebastian Harner",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.12.7",
+    "typescript": "^3.9.7"
+  }
+}
